@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">ER</div>
+
+            <div>
+                <h1>Employee Registration Form</h1>
+                <p>Fill in the information below and click Submit.</p>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <!-- Registration Form -->
+        <form>
+
+            <!-- Title -->
+            <label>Title</label>
+
+            <div class="box title-box">
+                <label class="radio-option">
+                    <input type="radio" name="title" value="Mr" checked>
+                    <span>Mr.</span>
+                </label>
+
+                <label class="radio-option">
+                    <input type="radio" name="title" value="Mrs">
+                    <span>Mrs.</span>
+                </label>
+
+                <label class="radio-option">
+                    <input type="radio" name="title" value="Ms">
+                    <span>Ms.</span>
+                </label>
+            </div>
+
+
+            <!-- First Name and Last Name -->
+            <div class="row">
+
+                <div class="field">
+                    <label for="firstName">First Name</label>
+                    <input
+                        type="text"
+                        id="firstName"
+                        placeholder="First Name">
+                </div>
+
+                <div class="field">
+                    <label for="lastName">Last Name</label>
+                    <input
+                        type="text"
+                        id="lastName"
+                        placeholder="Last Name">
+                </div>
+
+            </div>
+
+
+            <!-- Mail Address 1 -->
+            <div class="field full">
+                <label for="address1">Mail Address 1</label>
+                <input
+                    type="text"
+                    id="address1"
+                    placeholder="Street, house, etc.">
+            </div>
+
+
+            <!-- Mail Address 2 -->
+            <div class="field full">
+                <label for="address2">Mail Address 2</label>
+                <input
+                    type="text"
+                    id="address2"
+                    placeholder="Apartment, suite, etc.">
+            </div>
+
+
+            <!-- City and State -->
+            <div class="row">
+
+                <div class="field">
+                    <label for="city">City</label>
+                    <input
+                        type="text"
+                        id="city"
+                        placeholder="City">
+                </div>
+
+                <div class="field">
+                    <label for="state">State</label>
+
+                    <select id="state">
+                        <option value="">Select state</option>
+                        <option>Gujarat</option>
+                        <option>Maharashtra</option>
+                        <option>California</option>
+                        <option>Texas</option>
+                        <option>New York</option>
+                        <option>Florida</option>
+                        <option>Nepal</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <!-- Zip and Upload Photo -->
+            <div class="row">
+
+                <div class="field">
+                    <label for="zip">Zip</label>
+                    <input
+                        type="text"
+                        id="zip"
+                        placeholder="Zip / Postal code">
+                </div>
+
+                <div class="field">
+                    <label for="photo">Upload Photo</label>
+
+                    <input
+                        type="file"
+                        id="photo"
+                        accept=".jpg,.jpeg,.png,.webp">
+
+                    <small>Accepted: JPG/PNG/WebP</small>
+                </div>
+
+            </div>
+
+
+            <!-- Email -->
+            <div class="field full">
+                <label for="email">E-Mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="name@example.com">
+            </div>
+
+
+            <!-- Mobile -->
+            <div class="field full">
+                <label for="mobile">Mobile</label>
+                <input
+                    type="tel"
+                    id="mobile"
+                    placeholder="+1 (555) 123-4567">
+            </div>
+
+
+            <!-- Languages -->
+            <div class="field full">
+                <label>Languages known</label>
+
+                <div class="box languages">
+
+                    <label class="check-option">
+                        <input type="checkbox" name="language" value="English">
+                        <span>English</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox" name="language" value="French">
+                        <span>French</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox" name="language" value="Bengali">
+                        <span>Bengali</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox" name="language" value="Latin">
+                        <span>Latin</span>
+                    </label>
+                    
+                    <label class="check-option">
+                        <input type="checkbox" name="language" value="Hindi">
+                        <span>Nepali</span>
+
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- Additional Information -->
+            <div class="field full">
+                <label for="info">Additional Information/label>
+
+                <textarea
+                    id="info"
+                    placeholder="Optional"></textarea>
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="buttons">
+
+                <button type="reset" class="reset">
+                    Wanted to Clear the Form? Hit Reset Button
+                </button>
+
+                <button type="submit" class="submit">
+                    Hit to Submit Button
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
