@@ -3,229 +3,436 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Employee Registration Form</title>
 
-
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
 </head>
 
-<body>
+<body class="bg-light">
 
-    <div class="page">
+    <div class="container py-5">
 
-        <!-- Header -->
-        <div class="header">
-            <div class="logo">ER</div>
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-md-11">
 
-            <div>
-                <h1>Employee Registration Form</h1>
-                <p>Fill in the information below and click Submit.</p>
+                <!-- Main Card -->
+                <div class="card border-0 shadow-sm">
+
+                    <!-- Header -->
+                    <div class="card-header bg-primary text-white p-4">
+                        <div class="d-flex align-items-center">
+
+                            <div class="bg-white text-primary rounded-3
+                                        d-flex align-items-center justify-content-center
+                                        fw-bold fs-5 me-3"
+                                 style="width: 50px; height: 50px;">
+                                ER
+                            </div>
+
+                            <div>
+                                <h3 class="mb-1 fw-bold">
+                                    Employee Registration Form
+                                </h3>
+
+                                <small class="text-white-50">
+                                    Fill in the information below and click Submit.
+                                </small>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Form -->
+                    <div class="card-body p-4">
+
+                        <form>
+
+                            <!-- Title -->
+                            <div class="mb-3">
+
+                                <label class="form-label fw-semibold">
+                                    Title
+                                </label>
+
+                                <div class="border rounded p-3 bg-light">
+
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="title"
+                                            id="mr"
+                                            value="Mr"
+                                            checked
+                                        >
+                                        <label class="form-check-label" for="mr">
+                                            Mr.
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="title"
+                                            id="mrs"
+                                            value="Mrs"
+                                        >
+                                        <label class="form-check-label" for="mrs">
+                                            Mrs.
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="title"
+                                            id="ms"
+                                            value="Ms"
+                                        >
+                                        <label class="form-check-label" for="ms">
+                                            Ms.
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!-- First Name / Last Name -->
+                            <div class="row g-3 mb-3">
+
+                                <div class="col-md-6">
+                                    <label for="firstName"
+                                           class="form-label fw-semibold">
+                                        First Name
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="firstName"
+                                        class="form-control"
+                                        placeholder="First Name"
+                                    >
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="lastName"
+                                           class="form-label fw-semibold">
+                                        Last Name
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="lastName"
+                                        class="form-control"
+                                        placeholder="Last Name"
+                                    >
+                                </div>
+
+                            </div>
+
+
+                            <!-- Address 1 -->
+                            <div class="mb-3">
+
+                                <label for="address1"
+                                       class="form-label fw-semibold">
+                                    Mail Address 1
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="address1"
+                                    class="form-control"
+                                    placeholder="Street, house, etc."
+                                >
+
+                            </div>
+
+
+                            <!-- Address 2 -->
+                            <div class="mb-3">
+
+                                <label for="address2"
+                                       class="form-label fw-semibold">
+                                    Mail Address 2
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="address2"
+                                    class="form-control"
+                                    placeholder="Apartment, suite, etc."
+                                >
+
+                            </div>
+
+
+                            <!-- City / State -->
+                            <div class="row g-3 mb-3">
+
+                                <div class="col-md-6">
+
+                                    <label for="city"
+                                           class="form-label fw-semibold">
+                                        City
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="city"
+                                        class="form-control"
+                                        placeholder="City"
+                                    >
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <label for="state"
+                                           class="form-label fw-semibold">
+                                        State
+                                    </label>
+
+                                    <select
+                                        id="state"
+                                        class="form-select"
+                                    >
+                                        <option selected disabled>
+                                            Select state
+                                        </option>
+
+                                        <option>Gujarat</option>
+                                        <option>Maharashtra</option>
+                                        <option>California</option>
+                                        <option>Texas</option>
+                                        <option>New York</option>
+                                        <option>Florida</option>
+                                        <option>Nepal</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Zip / Photo -->
+                            <div class="row g-3 mb-3">
+
+                                <div class="col-md-6">
+
+                                    <label for="zip"
+                                           class="form-label fw-semibold">
+                                        Zip
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="zip"
+                                        class="form-control"
+                                        placeholder="Zip / Postal code"
+                                    >
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <label for="photo"
+                                           class="form-label fw-semibold">
+                                        Upload Photo
+                                    </label>
+
+                                    <input
+                                        type="file"
+                                        id="photo"
+                                        class="form-control"
+                                        accept=".jpg,.jpeg,.png,.webp"
+                                    >
+
+                                    <div class="form-text">
+                                        Accepted: JPG / PNG / WebP
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Email -->
+                            <div class="mb-3">
+
+                                <label for="email"
+                                       class="form-label fw-semibold">
+                                    E-Mail
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    class="form-control"
+                                    placeholder="name@example.com"
+                                >
+
+                            </div>
+
+
+                            <!-- Mobile -->
+                            <div class="mb-3">
+
+                                <label for="mobile"
+                                       class="form-label fw-semibold">
+                                    Mobile
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="mobile"
+                                    class="form-control"
+                                    placeholder="+1 (555) 123-4567"
+                                >
+
+                            </div>
+
+
+                            <!-- Languages -->
+                            <div class="mb-3">
+
+                                <label class="form-label fw-semibold">
+                                    Languages Known
+                                </label>
+
+                                <div class="border rounded p-3 bg-light">
+
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            id="english"
+                                            value="English"
+                                        >
+                                        <label class="form-check-label"
+                                               for="english">
+                                            English
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            id="french"
+                                            value="French"
+                                        >
+                                        <label class="form-check-label"
+                                               for="french">
+                                            French
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            id="bengali"
+                                            value="Bengali"
+                                        >
+                                        <label class="form-check-label"
+                                               for="bengali">
+                                            Bengali
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            id="latin"
+                                            value="Latin"
+                                        >
+                                        <label class="form-check-label"
+                                               for="latin">
+                                            Latin
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            id="nepali"
+                                            value="Nepali"
+                                        >
+                                        <label class="form-check-label"
+                                               for="nepali">
+                                            Nepali
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Additional Information -->
+                            <div class="mb-4">
+
+                                <label for="info"
+                                       class="form-label fw-semibold">
+                                    Additional Information
+                                </label>
+
+                                <textarea
+                                    id="info"
+                                    class="form-control"
+                                    rows="4"
+                                    placeholder="Optional"
+                                ></textarea>
+
+                            </div>
+
+
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-end gap-2">
+
+                                <button
+                                    type="reset"
+                                    class="btn btn-outline-secondary px-4"
+                                >
+                                    Reset
+                                </button>
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary px-4"
+                                >
+                                    Submit
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
             </div>
         </div>
 
-        <div class="line"></div>
-
-        <!-- Registration Form -->
-        <form>
-
-            <!-- Title -->
-            <label>Title</label>
-
-            <div class="box title-box">
-                <label class="radio-option">
-                    <input type="radio" name="title" value="Mr" checked>
-                    <span>Mr.</span>
-                </label>
-
-                <label class="radio-option">
-                    <input type="radio" name="title" value="Mrs">
-                    <span>Mrs.</span>
-                </label>
-
-                <label class="radio-option">
-                    <input type="radio" name="title" value="Ms">
-                    <span>Ms.</span>
-                </label>
-            </div>
-
-
-            <!-- First Name and Last Name -->
-            <div class="row">
-
-                <div class="field">
-                    <label for="firstName">First Name</label>
-                    <input
-                        type="text"
-                        id="firstName"
-                        placeholder="First Name">
-                </div>
-
-                <div class="field">
-                    <label for="lastName">Last Name</label>
-                    <input
-                        type="text"
-                        id="lastName"
-                        placeholder="Last Name">
-                </div>
-
-            </div>
-
-
-            <!-- Mail Address 1 -->
-            <div class="field full">
-                <label for="address1">Mail Address 1</label>
-                <input
-                    type="text"
-                    id="address1"
-                    placeholder="Street, house, etc.">
-            </div>
-
-
-            <!-- Mail Address 2 -->
-            <div class="field full">
-                <label for="address2">Mail Address 2</label>
-                <input
-                    type="text"
-                    id="address2"
-                    placeholder="Apartment, suite, etc.">
-            </div>
-
-
-            <!-- City and State -->
-            <div class="row">
-
-                <div class="field">
-                    <label for="city">City</label>
-                    <input
-                        type="text"
-                        id="city"
-                        placeholder="City">
-                </div>
-
-                <div class="field">
-                    <label for="state">State</label>
-
-                    <select id="state">
-                        <option value="">Select state</option>
-                        <option>Gujarat</option>
-                        <option>Maharashtra</option>
-                        <option>California</option>
-                        <option>Texas</option>
-                        <option>New York</option>
-                        <option>Florida</option>
-                        <option>Nepal</option>
-                    </select>
-                </div>
-
-            </div>
-
-
-            <!-- Zip and Upload Photo -->
-            <div class="row">
-
-                <div class="field">
-                    <label for="zip">Zip</label>
-                    <input
-                        type="text"
-                        id="zip"
-                        placeholder="Zip / Postal code">
-                </div>
-
-                <div class="field">
-                    <label for="photo">Upload Photo</label>
-
-                    <input
-                        type="file"
-                        id="photo"
-                        accept=".jpg,.jpeg,.png,.webp">
-
-                    <small>Accepted: JPG/PNG/WebP</small>
-                </div>
-
-            </div>
-
-
-            <!-- Email -->
-            <div class="field full">
-                <label for="email">E-Mail</label>
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="name@example.com">
-            </div>
-
-
-            <!-- Mobile -->
-            <div class="field full">
-                <label for="mobile">Mobile</label>
-                <input
-                    type="tel"
-                    id="mobile"
-                    placeholder="+1 (555) 123-4567">
-            </div>
-
-
-            <!-- Languages -->
-            <div class="field full">
-                <label>Languages known</label>
-
-                <div class="box languages">
-
-                    <label class="check-option">
-                        <input type="checkbox" name="language" value="English">
-                        <span>English</span>
-                    </label>
-
-                    <label class="check-option">
-                        <input type="checkbox" name="language" value="French">
-                        <span>French</span>
-                    </label>
-
-                    <label class="check-option">
-                        <input type="checkbox" name="language" value="Bengali">
-                        <span>Bengali</span>
-                    </label>
-
-                    <label class="check-option">
-                        <input type="checkbox" name="language" value="Latin">
-                        <span>Latin</span>
-                    </label>
-                    
-                    <label class="check-option">
-                        <input type="checkbox" name="language" value="Hindi">
-                        <span>Nepali</span>
-
-                    </label>
-
-                </div>
-            </div>
-
-
-            <!-- Additional Information -->
-            <div class="field full">
-                <label for="info">Additional Information/label>
-
-                <textarea
-                    id="info"
-                    placeholder="Optional"></textarea>
-            </div>
-
-
-            <!-- Buttons -->
-            <div class="buttons">
-
-                <button type="reset" class="reset">
-                    Wanted to Clear the Form? Hit Reset Button
-                </button>
-
-                <button type="submit" class="submit">
-                    Hit to Submit Button
-                </button>
-
-            </div>
-
-        </form>
-
     </div>
+
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
 
 </body>
 </html>
